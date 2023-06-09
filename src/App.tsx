@@ -3,8 +3,8 @@ import { Footer } from "./components/Footer"
 import { Projects } from "./components/Projects"
 import { Services } from "./components/Services"
 import { Skills } from "./components/Skills"
-import { About } from "./components/about"
-import { Hero } from "./components/hero"
+import { About } from "./components/About"
+import { Hero } from "./components/Hero"
 import "./index.css"
 
 
