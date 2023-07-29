@@ -10,15 +10,19 @@ import "./index.css"
 
 function App() {
   return (
-    <main>
-      <Hero />
-      <About />
-      <Services />
-      <Projects />
-      <Skills />
-      <Contact />
-      <Footer />
-    </main>
+    <>
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <Projects />
+        <Skills />
+        <Contact />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </>
   )
 }
 
