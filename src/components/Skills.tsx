@@ -18,17 +18,17 @@ export function Skills() {
     },
     {
       name: "JavaScript",
-      icon: "public/img/javascript.svg",
+      icon: "img/javascript.svg",
       level: 65,
     },
     {
       name: "React.js",
-      icon: "../../public/img/react.svg",
+      icon: "img/react.svg",
       level: 45,
     },
     {
       name: "Node.js",
-      icon: "../../public/img/nodejs.svg",
+      icon: "img/nodejs.svg",
       level: 15,
     },
   ]
