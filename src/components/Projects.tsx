@@ -3,42 +3,42 @@ import { HiArrowTopRightOnSquare } from "react-icons/hi2"
 export function Projects() {
   const projects = [
     {
-      title: "Projeto 1",
-      description: "Descrição do projeto 1",
+      title: "Cofrinho Java",
+      description: "Trabalho da faculdade para a matéria de orientação a objetos , onde busco praticar minhas habilidades aprendidas, com um projeto de cofrinho na linguagem Java, que é uma linguagem que utiliza o paradigma da programação orientação ao objeto",
       image:
-        "colocar imagem url",
-      link: "#",
+        "https://cdn.dribbble.com/userupload/8930211/file/original-3f2bb7fc4e8179677325c46a2c8501ef.png?resize=278x208",
+      link: "https://github.com/FlavioAraujo23/Cofrinho-Java",
       colSpan: "col-span-1",
     },
     {
       title: "Bikcraft",
       description: "Site fictício de bicicletas elétricas, criado como projeto final do curso de HTML e CSS para Iniciantes - Origamid. Neste projeto trabalhei com CSS, HTML e JavaScript.",
       image:
-        "./assets/img/bikcraft-mockup.jpg",
-      link: "#",
+        "https://cdn.dribbble.com/userupload/8930052/file/original-0760b38ec01d7f1bb93f6efc250338f8.png?resize=571x208",
+      link: "https://flavioaraujo23.github.io/bikcraft/",
       colSpan: "col-span-1 md:col-span-2",
     },
     {
-      title: "Projeto 3",
-      description: "Descrição do projeto 3",
+      title: "Python",
+      description: "Trabalho para a faculdade da matéria de lógica de programação, aqui busco praticar minhas habilidades absorvidas da matéria, em alguns exercícios que exploro e pratico minha lógica na linguagem Python.",
       image:
-        "colocar imagem url",
+        "https://cdn.dribbble.com/userupload/8930505/file/original-90b7dd5657a45f0a3b406621643b8da3.png?resize=752x604",
+      link: "https://github.com/FlavioAraujo23/Trabalho-Python",
+      colSpan: "col-span-1",
+    },
+    {
+      title: "Em produção...",
+      description: "Em produção...",
+      image:
+        'Em produção...',
       link: "#",
       colSpan: "col-span-1",
     },
     {
-      title: "Projeto 4",
-      description: "Descrição do projeto 4",
+      title: "Em produção...",
+      description: "Em produção...",
       image:
-        "colocar imagem url",
-      link: "#",
-      colSpan: "col-span-1",
-    },
-    {
-      title: "Projeto 5",
-      description: "Descrição do projeto 5",
-      image:
-        "colocar imagem url",
+        'Em produção...',
       link: "#",
       colSpan: "col-span-1",
     },

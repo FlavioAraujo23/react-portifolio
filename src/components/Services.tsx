@@ -34,7 +34,7 @@ export function Services() {
             <span className="font-handwriting text-4xl">Serviços</span>
           </h2>
           <p className="text-sm text-gray-600">
-            Posso atender uma gama completa de serviços, sou especializado em desenvolvimento front-end, com habilidades sólidas em banco de dados e sistemas.
+            Posso atender uma gama completa de serviços, sou especializado em desenvolvimento front-end, e estou estudando para ter habilidades sólidas em banco de dados e sistemas.
           </p>
         </div>
         <div className="mt-6 flex flex-col gap-2 md:flex-row">
