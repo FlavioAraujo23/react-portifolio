@@ -13,22 +13,22 @@ export function Skills() {
   const skills = [
     {
       name: "HTML5/CSS3",
-      icon: "././public/img/html.svg",
+      icon: "../../public/img/html.svg",
       level: 95,
     },
     {
       name: "JavaScript",
-      icon: "././public/img/javascript.svg",
+      icon: "../../public/img/javascript.svg",
       level: 65,
     },
     {
       name: "React.js",
-      icon: "././public/img/react.svg",
+      icon: "../../public/img/react.svg",
       level: 45,
     },
     {
       name: "Node.js",
-      icon: "././public/img/nodejs.svg",
+      icon: "../../public/img/nodejs.svg",
       level: 15,
     },
   ]
