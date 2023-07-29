@@ -25,7 +25,7 @@ export function Hero() {
         </div>
         </div>
         <div className='basis-1/2'>
-          <div className='bg-cyan-300  rounded-full h-1 w-12 p-6'></div>
+          <div className=" bg-cover bg-center md:-left-12 md:-top-12 md:h-72 md:w-56 rounded-xl"></div> 
         </div>
       </div>
   </section>
