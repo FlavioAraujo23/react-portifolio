@@ -3,10 +3,10 @@ export function About() {
     <section className="container mx-auto my-4 max-w-5xl p-4">
       <div className="p-4 text-center relative">
         <h2 className="text-blue-900 font-bold relative z-10">
-          <span className="mr-2 font-headline text-3xl">Sobre</span>
-          <span className="font-handwriting text-4xl">Mim</span>
+          <span className="mr-2 font-headline text-3xl sm:text-2xl">Sobre</span>
+          <span className="font-handwriting text-4xl sm:text-3xl">Mim</span>
         </h2>
-        <p className="relative text-sm text-gray-600">
+        <p className="relative text-sm text-gray-600 sm:text-xs">
           Tenho executado projetos e gostaria que o próximo seja o seu.
         </p>
 
@@ -22,10 +22,10 @@ export function About() {
               <span className="font-headline font-bold uppercase text-blue-900">Flávio Araújo</span>
             </p>
 
-            <table className="mt-4 w-full text-sm">
+            <table className="mt-4 w-full text-xs">
               <tbody>
                 <tr>
-                  <td className="font-headline font-bold uppercase text-blue-900">
+                  <td className="font-headline font-bold uppercase text-blue-900 ">
                     Idade:
                   </td>
                   <td>20</td>
@@ -50,7 +50,7 @@ export function About() {
                   <td>
                     <a
                       href="mailto:flaviolopes1027@gmail.com"
-                      className="underline hover:text-blue-800"
+                      className="underline hover:text-blue-800 "
                     >
                       flaviolopes1027@gmail.com
                     </a>
