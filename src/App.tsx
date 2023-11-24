@@ -6,11 +6,13 @@ import { Skills } from "./components/Skills"
 import { About } from "./components/About"
 import { Hero } from "./components/Hero"
 import "./index.css"
+import { BrowserRouter} from "react-router-dom"
 
 
 function App() {
   return (
     <>
+    <BrowserRouter>
       <main>
         <Hero />
         <About />
@@ -21,7 +23,9 @@ function App() {
       </main>
       <footer>
         <Footer />
-      </footer>
+      </footer>      
+    </BrowserRouter>
+      
     </>
   )
 }
