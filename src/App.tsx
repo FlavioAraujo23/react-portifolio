@@ -7,6 +7,8 @@ import { About } from "./components/About"
 import { Hero } from "./components/Hero"
 import "./index.css"
 import { BrowserRouter} from "react-router-dom"
+import MenuMobile from "./components/Menu"
+import { Analytics } from '@vercel/analytics/react';
 
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
     <BrowserRouter>
       <main>
         <Hero />
+        <MenuMobile />
         <About />
         <Services />
         <Projects />
