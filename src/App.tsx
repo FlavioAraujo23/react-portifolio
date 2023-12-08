@@ -23,6 +23,7 @@ function App() {
       <footer>
         <Footer />
       </footer>
+      <Analytics />
     </>
   )
 }
