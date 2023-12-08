@@ -6,6 +6,7 @@ import { Skills } from "./components/Skills"
 import { About } from "./components/About"
 import { Hero } from "./components/Hero"
 import "./index.css"
+import { Analytics } from '@vercel/analytics/react';
 
 
 function App() {
