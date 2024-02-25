@@ -1,4 +1,5 @@
-import { HiArrowTopRightOnSquare } from "react-icons/hi2"
+import { HiCodeBracket } from "react-icons/hi2";
+import { HiLink } from "react-icons/hi2";
 
 export function Projects() {
   const projects = [
@@ -7,23 +8,26 @@ export function Projects() {
       description: "Site fictício de bicicletas elétricas, criado como projeto final do curso de HTML e CSS para Iniciantes - Origamid. Neste projeto trabalhei com CSS, HTML e JavaScript.",
       image:
         "/img/bikcraftCode.jpg",
+      projectLink: 'https://flavioaraujo23.github.io/bikcraft/',
       link: "https://flavioaraujo23.github.io/bikcraft/",
       colSpan: "col-span-1 ",
+    },
+    {
+      title: "To-do App",
+      description: "Um projeto fullstack que oferece uma aplicação para gerenciamento de tarefas, onde os usuários podem criar, listar, editar, excluir e adicionar novas tarefas de forma intuitiva e eficiente.",
+      image:
+        "/img/imageForProject.jpg",
+      projectLink: 'https://todoapp.devbyflavio.com.br/',
+      link: "https://github.com/FlavioAraujo23/To-do",
+      colSpan: "col-span-1 md:col-span-2",
     },
     {
       title: "Cofrinho Java",
       description: "Trabalho da faculdade para a matéria de orientação a objetos, onde busco praticar minhas habilidades aprendidas, com um projeto de cofrinho na linguagem Java, que é uma linguagem que utiliza o paradigma da programação orientação ao objeto",
       image:
         "/img/codeImage.jpg",
+      projectLink: '',
       link: "https://github.com/FlavioAraujo23/Cofrinho-Java",
-      colSpan: "col-span-1 md:col-span-2",
-    },
-    {
-      title: "Python",
-      description: "Trabalho para a faculdade da matéria de lógica de programação, aqui busco praticar minhas habilidades absorvidas da matéria, em alguns exercícios que exploro e pratico minha lógica na linguagem Python.",
-      image:
-        "/img/pythonCode.jpg",
-      link: "https://github.com/FlavioAraujo23/Trabalho-Python",
       colSpan: "col-span-1",
     },
     {
@@ -31,6 +35,7 @@ export function Projects() {
       description: "Um projeto incrível desenvolvido através do curso da Origamid, totalmente construído em JavaScript.  Nele foi abordado todos os aspéctos do javaScript desde o básico até o mais avançado",
       image:
         "/img/animaisFantasticosImg.jpg",
+      projectLink: 'https://animais-fantasticos-blush.vercel.app/',
       link: "https://github.com/FlavioAraujo23/animaisFantasticos",
       colSpan: "col-span-1",
     },
@@ -39,9 +44,21 @@ export function Projects() {
       description: "Desafio de programar uma calculadora em React proposto pelo Vai na Web",
       image:
         "/img/imageForProject.jpg",
+      projectLink: 'https://desafio-calculadora-roan.vercel.app/',
       link: "https://github.com/FlavioAraujo23/desafio-calculadora",
       colSpan: "col-span-1",
     },
+    {
+      title: "Linklist",
+      description: "O Linklist é uma plataforma que permite aos usuários criar páginas personalizadas com uma coleção de links para suas redes sociais, sites, portfólios e muito mais.",
+      image:
+        "/img/imageForProject.jpg",
+      projectLink: 'https://linklist.devbyflavio.com.br/',
+      link: "https://github.com/FlavioAraujo23/Linklist",
+      colSpan: "col-span-1 md:col-span-2",
+    },
+    
+
   ]
 
   return (
@@ -74,9 +91,14 @@ export function Projects() {
                     {project.title}
                   </h4>
                   <p className=" mb-4 ml-2 text-sm sm:text-xs">{project.description}</p>
-                  <a href={project.link} target="_blank">
-                    <HiArrowTopRightOnSquare className="h-6 w-6" />
-                  </a>
+                  <div className="flex gap-5 justify-center items-center">
+                    <a href={project.link} target="_blank">
+                      <HiCodeBracket className="h-6 w-6 hover:fill-cyan-200" />
+                    </a>
+                    <a href={project.projectLink} target="_blank">
+                      <HiLink className="h-6 w-6 hover:fill-cyan-200" />
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}
