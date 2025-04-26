@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { smtpexpressClient } from "../services/smtp";
+import { send } from "@emailjs/browser";
 
 export function MaintenancePage() {
   const [email, setEmail] = useState("");
@@ -54,28 +54,21 @@ export function MaintenancePage() {
         JSON.stringify(subscribers)
       );
 
-      await smtpexpressClient.sendApi.sendMail({
-        subject: "Confirmação de Inscrição - Portfólio em Manutenção",
-        message: `
-          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; color: #333;">
-            <h2 style="color: #3182ce;">Obrigado por se inscrever!</h2>
-            <p>Olá,</p>
-            <p>Obrigado por se inscrever para receber notificações sobre o lançamento do meu novo portfólio!</p>
-            <div style="background-color: #ebf8ff; border-left: 4px solid #3182ce; padding: 15px; margin: 20px 0;">
-              <p><strong>O que esperar:</strong> Estou atualizando meu portfólio para trazer uma experiência ainda melhor para você. Voltarei em breve com novidades incríveis!</p>
-            </div>
-            <p>Assim que o site estiver no ar, você receberá um email para conferir todas as novidades em primeira mão.</p>
-            <p>Atenciosamente,<br>Flávio Araújo</p>
-          </div>
-        `,
-        sender: {
-          name: "Flávio Araújo",
-          email: "flavioaraujo@devbyflavio.com.br",
+      const serviceID = import.meta.env.VITE_APP_SERVICE_ID;
+      const templateID = import.meta.env.VITE_APP_TEMPLATE_ID;
+      const publickKey = import.meta.env.VITE_APP_PUBLIC_KEY;
+
+      if (!serviceID || !templateID || !publickKey) {
+        throw new Error("Variaveis do sistema incorretas!");
+      }
+      await send(
+        serviceID,
+        templateID,
+        {
+          user_email: email,
         },
-        recipients: {
-          email: email,
-        },
-      });
+        publickKey
+      );
 
       setIsSubscribed(true);
       setEmail("");
