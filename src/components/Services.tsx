@@ -1,11 +1,12 @@
 import {
   HiCommandLine,
   HiComputerDesktop,
-  HiDevicePhoneMobile
-} from "react-icons/hi2"
+  HiDevicePhoneMobile,
+} from "react-icons/hi2";
 
 export function Services() {
-    const services = [{
+  const services = [
+    {
       title: "Web",
       description:
         "Desenvolvimento de sites e sistemas web estáticos e dinâmicos com React.js, HTML5 e CSS3.",
@@ -21,7 +22,7 @@ export function Services() {
       description: "Desenvolvimento de aplicativos Android e iOS.",
       icon: <HiDevicePhoneMobile className="h-12 w-12" />,
     },
-  ]
+  ];
   return (
     <>
       <section className="container mx-auto my-12 max-w-4xl p-4">
@@ -34,23 +35,24 @@ export function Services() {
             <span className="font-handwriting text-4xl">Serviços</span>
           </h2>
           <p className="text-sm text-gray-600">
-            Posso atender uma gama completa de serviços, sou especializado em desenvolvimento front-end, e estou estudando para ter habilidades sólidas em banco de dados e sistemas.
+            Posso atender uma gama completa de serviços, sou especializado em
+            desenvolvimento front-end, e estou estudando para ter habilidades
+            sólidas em banco de dados e sistemas.
           </p>
         </div>
         <div className="mt-6 flex flex-col gap-2 md:flex-row">
-          {
-            services.map((service, index) => (
-              <div 
-                className="basis-1/3 rounded-lg bg-blue-700 p-4 text-white"
-                key={`service-${index}`}>
-                <div className="mb-2">{service.icon}</div>
-                <h3 className="text-xl font-bold">{service.title}</h3>
-                <p className="text-sm">{service.description}</p>
-              </div>
-            ))
-          }
+          {services.map((service, index) => (
+            <div
+              className="basis-1/3 rounded-lg bg-blue-700 p-4 text-white"
+              key={`service-${index}`}
+            >
+              <div className="mb-2">{service.icon}</div>
+              <h3 className="text-xl font-bold">{service.title}</h3>
+              <p className="text-sm">{service.description}</p>
+            </div>
+          ))}
         </div>
       </section>
     </>
-  )
+  );
 }

@@ -5,34 +5,30 @@ import { Services } from "./components/Services";
 import { Skills } from "./components/Skills";
 import { About } from "./components/About";
 import { Hero } from "./components/Hero";
+import { Experience } from "./components/Experience";
+import { PageTransition, SmoothScroll } from "./components/PageTransition";
 import "./index.css";
 import { Analytics } from "@vercel/analytics/react";
-import { MaintenancePage } from "./components/MaintenancePage";
-import { Experience } from "./components/Experience";
 
 function App() {
-  const isMaintenanceMode = false;
-
-  if (isMaintenanceMode) {
-    return <MaintenancePage />;
-  }
-
   return (
-    <>
-      <main>
-        <Hero />
-        <About />
-        <Experience />
-        <Services />
-        <Projects />
-        <Skills />
-        <Contact />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
-      <Analytics />
-    </>
+    <PageTransition>
+      <SmoothScroll>
+        <main>
+          <Hero />
+          <About />
+          <Services />
+          <Experience />
+          <Projects />
+          <Skills />
+          <Contact />
+        </main>
+        <footer>
+          <Footer />
+        </footer>
+        <Analytics />
+      </SmoothScroll>
+    </PageTransition>
   );
 }
 
