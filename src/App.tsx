@@ -8,9 +8,10 @@ import { Hero } from "./components/Hero";
 import "./index.css";
 import { Analytics } from "@vercel/analytics/react";
 import { MaintenancePage } from "./components/MaintenancePage";
+import { Experience } from "./components/Experience";
 
 function App() {
-  const isMaintenanceMode = true;
+  const isMaintenanceMode = false;
 
   if (isMaintenanceMode) {
     return <MaintenancePage />;
@@ -21,6 +22,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Experience />
         <Services />
         <Projects />
         <Skills />
