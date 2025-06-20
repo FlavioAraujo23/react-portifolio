@@ -445,7 +445,7 @@ export function Projects() {
               },
             }}
           >
-            {filteredProjects.map((project, index) => (
+            {filteredProjects.map((project) => (
               <motion.div
                 key={project.id}
                 className="h-full overflow-hidden rounded-xl bg-gray-800 shadow-xl"
