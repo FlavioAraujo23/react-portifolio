@@ -335,7 +335,7 @@ export function Projects() {
                 <div className="flex">
                   {featuredProjects.map((project, index) => (
                     <div
-                      key={project.id}
+                      key={project.id + index}
                       className="min-w-full"
                       style={{
                         display: index === currentSlide ? "block" : "none",
