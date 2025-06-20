@@ -182,7 +182,8 @@ export function About() {
           </motion.div>
 
           <motion.div
-            className="absolute -left-2 -top-4 h-24 w-20 rounded-lg bg-gray-600 bg-[url('https://cdn.dribbble.com/userupload/8932548/file/original-f92ffb8df782ef9392a1e48b1b955527.jpg?resize=1024x1280')] bg-cover bg-center md:-left-12 md:-top-12 md:h-72 md:w-56"
+            rel="preload"
+            className="absolute -left-2 -top-4 h-24 w-20 rounded-lg bg-gray-600 bg-[url('https://res.cloudinary.com/de4veghwo/image/upload/v1745715469/profile-elementor-io-optimized_olrowr.webp')] bg-cover bg-center md:-left-12 md:-top-12 md:h-72 md:w-56"
             initial={{ opacity: 0, x: -50, rotate: -10 }}
             animate={
               isInView

@@ -82,7 +82,7 @@ export function Hero() {
               </motion.a>
 
               <motion.a
-                href="/download/CV__Flavio__Araujo.pdf"
+                href="/download/Cv_Flavio_Araujo.docx.pdf"
                 download={"CV__Flavio__Araujo.pdf"}
                 className="button flex items-center gap-2 border border-blue-600 bg-transparent text-blue-400 hover:bg-blue-600/10"
                 whileHover={{
