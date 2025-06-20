@@ -333,12 +333,13 @@ export function Projects() {
             <div className="relative">
               <div className="overflow-hidden rounded-2xl">
                 <div className="flex">
-                  {featuredProjects.map((project, index) => (
+                  {featuredProjects.map((project, projectIndex) => (
                     <div
-                      key={project.id + index}
+                      key={`${project.id}-${projectIndex}`}
                       className="min-w-full"
                       style={{
-                        display: index === currentSlide ? "block" : "none",
+                        display:
+                          projectIndex === currentSlide ? "block" : "none",
                       }}
                     >
                       <div className="group relative h-[500px]">
